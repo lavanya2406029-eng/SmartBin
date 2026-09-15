@@ -29,8 +29,10 @@ st.caption("IoT and AI Based Predictive Waste Collection System")
 
 if not firebase_admin._apps:
 
+    firebase_config = dict(st.secrets["firebase"])
+
     cred = credentials.Certificate(
-        "firebase-key.json"
+        firebase_config
     )
 
     firebase_admin.initialize_app(
