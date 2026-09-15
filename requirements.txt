@@ -1,0 +1,8 @@
+streamlit
+firebase-admin
+pandas
+numpy
+scikit-learn
+folium
+streamlit-folium
+requests
